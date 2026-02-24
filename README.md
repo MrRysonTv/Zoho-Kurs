@@ -192,21 +192,13 @@ Nutzung nur im Rahmen des Zoho Kurses.
 CopyRight By
 ~{MrRysonTv}~
 
- * ============================================
- * Entwickler Steckbrief – MrRysonTV
- * ============================================
- * Unternehmen: Uhrig Enterprises Holdings
- * Position: Software- und Webentwickler
- * ============================================
+    **STECKBRIEF
+    public class EntwicklerProfil {
 
-public class EntwicklerProfil {
-
-// Persönliche Informationen //
     private static final String NAME = "MrRysonTV";
     private static final String UNTERNEHMEN = "Uhrig Enterprises Holdings";
     private static final String POSITION = "Software- und Webentwickler";
 
-// Programmiersprachen
     private static final String[] PROGRAMMIERSPRACHEN = {
         "Lua",
         "Java",
@@ -221,41 +213,36 @@ public class EntwicklerProfil {
         "Python"
     };
 
-// Kontaktinformationen
     private static final String MOBIL = "015737811313";
     private static final String EMAIL = "kontakt@uhrig-enterprises-holdings.de";
-    
-public static void main(String[] args) {
 
-System.out.println("=================================");
-System.out.println("        Entwickler Steckbrief     ");
-System.out.println("=================================");
+    public static void main(String[] args) {
+
+        System.out.println("=================================");
+        System.out.println("        Entwickler Steckbrief     ");
+        System.out.println("=================================");
         System.out.println("Name: " + NAME);
         System.out.println("Unternehmen: " + UNTERNEHMEN);
         System.out.println("Position: " + POSITION);
         System.out.println();
 
-System.out.println("Programmiersprachen:");
-    for (String sprache : PROGRAMMIERSPRACHEN) {
-        System.out.println(" - " + sprache);
+        System.out.println("Programmiersprachen:");
+        for (String sprache : PROGRAMMIERSPRACHEN) {
+            System.out.println(" - " + sprache);
         }
 
-System.out.println();
-    System.out.println("Kontakt:");
-    System.out.println("Mobil: " + MOBIL);
-    System.out.println("Email: " + EMAIL);
-    System.out.println("=================================");
+        System.out.println();
+        System.out.println("Kontakt:");
+        System.out.println("Mobil: " + MOBIL);
+        System.out.println("Email: " + EMAIL);
+        System.out.println("=================================");
 
-// ------------------------------------------
-// Entscheidungs-Logik 😎
-// ------------------------------------------
+        String besterProgrammierer = "MrRysonTV";
 
-String besterProgrammierer = "MrRysonTV";
-
-if (besterProgrammierer.equals(NAME)) {
-    System.out.println("\nDu bist auf der richtigen Seite!");
-} else {
-    System.out.println("\nHast du keine Ahnung!");
+        if (besterProgrammierer.equals(NAME)) {
+            System.out.println("\nDu bist auf der richtigen Seite!");
+        } else {
+            System.out.println("\nHast du keine Ahnung!");
         }
     }
 }
